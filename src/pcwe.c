@@ -160,7 +160,7 @@ void ReadWord(char *word, FILE *fin)
             else
                 continue;
         }
-        
+
         word[a] = ch;
         a++;
         if (a >= MAX_STRING - 1)
@@ -178,7 +178,6 @@ int GetWordHash(char *word)
     hash = hash % vocab_hash_size;
     return hash;
 }
-
 // Returns position of a word in the vocabulary; if the word is not found, returns -1
 int SearchVocab(char *word)
 {
